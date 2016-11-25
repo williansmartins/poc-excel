@@ -19,7 +19,7 @@ import jxl.write.WriteException;
 import jxl.write.biff.RowsExceededException;
 
 
-public class WriteExcel {
+public class Gerar {
 
   private WritableCellFormat timesBoldUnderline;
   private WritableCellFormat times;
@@ -123,7 +123,7 @@ public void setOutputFile(String inputFile) {
   }
 
   public static void main(String[] args) throws WriteException, IOException {
-    WriteExcel test = new WriteExcel();
+    Gerar test = new Gerar();
     test.setOutputFile("c:/temp/lars.xls");
     test.write();
     System.out
